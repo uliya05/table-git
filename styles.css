@@ -1,0 +1,94 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 120px 350px 350px 120px;
+    grid-template-areas:
+        "header header header header"
+        "main main main aside"
+        "main main main aside"
+        "footer footer footer footer";
+
+}
+
+.header {
+    grid-area: header;
+    background: rgb(194, 191, 191);
+    text-align: center;
+}
+
+.main {
+    grid-area: main;
+    background: rgb(241, 241, 158);
+    padding: 20px;
+}
+
+.aside {
+    grid-area: aside;
+    background: rgb(185, 243, 185);
+    text-align: center;
+}
+
+.footer {
+    grid-area: footer;
+    background: rgb(194, 191, 191);
+    padding: 10px;
+    text-align: center;
+}
+
+.block {
+    background-color: rgb(240, 186, 86);
+    padding: 10px;
+    text-align: center;
+    grid-gap: 25px;
+    grid-column: 2/3;
+    grid-row: 3/4;
+
+}
+
+.block2 {
+    background-color: rgb(240, 186, 86);
+    padding: 10px;
+    text-align: center;
+    grid-gap: 25px;
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.block3 {
+    background-color: rgb(240, 186, 86);
+    padding: 10px;
+    text-align: center;
+    grid-gap: 25px;
+    grid-column: 2/4;
+    grid-row: 4/5;
+}
+
+.section {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    height: 100%;
+
+}
+
+.containermain {
+    width: 100%;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr 100px;
+    grid-template-rows: 255px 255px 1fr 1fr;
+    grid-gap: 10px;
+
+
+}
+
+.containerfooter {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: 100%;
+    grid-gap: 25px;
+    justify-content: space-around;
+    text-align: center;
+}
